@@ -19,12 +19,15 @@ export default class Blog {
 }
 
 function bindPaths(blog) {
-  blog.url.path = '/feeds/default'
-  blog.url.search = new URLSearchParams
+  let u = new URL(blog.url)
+  let q = new URLSearchParams
+  u.path = '/feeds/default'
   
-  blog.url.search.set('rel', 'rss')
+  q.set('rel', 'rss')
+  blog.url.search = q
   blog.feeds.xml = blog.url.toString()
   
-  blog.url.search.set('rel', 'json')
+  q.set('rel', 'json')
+  blog.url.search = q
   blog.feeds.json = blog.url.toString()
 }
