@@ -1,4 +1,4 @@
-class Blog {
+export default class Blog {
   constructor(host) {
     this.url = new URL(host)
     this.posts = []
@@ -28,5 +28,3 @@ function bindPaths(blog) {
   blog.url.search.set('rel', 'json')
   blog.feeds.json = blog.url.toString()
 }
-
-export default class Blog
