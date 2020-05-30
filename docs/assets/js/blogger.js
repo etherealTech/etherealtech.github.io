@@ -22,7 +22,7 @@ export default class Blog {
 function bindPaths(blog) {
   let u = new URL(blog.url)
   let q = new URLSearchParams
-  u.path = '/feeds/default'
+  u.pathname = '/feeds/default'
   
   q.set('rel', 'rss')
   u.search = q
