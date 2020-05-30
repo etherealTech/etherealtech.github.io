@@ -1,4 +1,5 @@
 name: Ethereal - Jekyll Github Page Starter
 description: Jekyll Github Page Starter Page by Ethereal
+repository: jekyll-gh-page
 source: docs
 encoding: UTF-8
