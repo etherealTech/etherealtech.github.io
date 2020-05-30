@@ -24,10 +24,10 @@ function bindPaths(blog) {
   u.path = '/feeds/default'
   
   q.set('rel', 'rss')
-  blog.url.search = q
-  blog.feeds.xml = blog.url.toString()
+  u.search = q
+  blog.feeds.xml = u.toString()
   
   q.set('rel', 'json')
-  blog.url.search = q
-  blog.feeds.json = blog.url.toString()
+  u.search = q
+  blog.feeds.json = u.toString()
 }
