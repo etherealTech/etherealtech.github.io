@@ -1,7 +1,7 @@
 let uri = new URL(location);
 
 window.addEventListener('load', function() {
-  document.appendChild(createScriptElement('module', '/assets/js/app.js'));
+  document.appendChild(createScriptElement('module', '/'+ GITHUB_REPO_NAME + '/assets/js/app.js'));
 });
 
 function createScriptElement(type, src) {
