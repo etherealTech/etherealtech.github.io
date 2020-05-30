@@ -1,6 +1,7 @@
 export default class Blog {
   constructor(host) {
     this.url = new URL(host)
+    this.feeds = {xml: null, json: null}
     this.posts = []
     
     bindPaths(this)
