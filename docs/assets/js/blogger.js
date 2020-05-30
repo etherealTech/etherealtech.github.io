@@ -24,11 +24,11 @@ function bindPaths(blog) {
   let q = new URLSearchParams
   u.pathname = '/feeds/posts/default'
   
-  q.set('rel', 'rss')
+  q.set('altr', 'rss')
   u.search = q
   blog.feeds.xml = u.toString()
   
-  q.set('rel', 'json')
+  q.set('alt', 'json')
   u.search = q
   blog.feeds.json = u.toString()
 }
