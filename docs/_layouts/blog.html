@@ -13,16 +13,18 @@
 </head>
 
 <body>
+    <nav>
+        <a class="button button-outline" href="/?_ref=logo">{{ site.name }}</a>
+    </nav>
 
     <div class="container">
     {{ page.content }}
     </div>
 
-    <br/> <br/>
+    <hr >
 
     <div class="container">
         <h4>Blog</h4>
-        <hr/>
         <ul>
         {% for post in site.posts %}
             <li>
@@ -33,7 +35,7 @@
     </div>
 
     <div class="clearfix">
-        <p><code>Copyright &copy; 2020 <a href="/?">Etherio</a> by <a href="https://etherio.net" target="_blank">Ethereal</a></code></p>
+        <p><code>Copyright &copy; 2020 <a href="/?_ref=footer">Etherio</a> by <a href="https://etherio.net" target="_blank">Ethereal</a></code></p>
     </div>
 </body>
 
