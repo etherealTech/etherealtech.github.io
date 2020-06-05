@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <nav>
-        <a class="button button-outline" href="/?_ref=logo">{{ site.name }}</a>
-    </nav>
+    <nav><br ><center>
+        <a class="button button-outline" href="/{{ site.repository }}?_ref=logo">{{ site.name }}</a>
+    </center><br ></nav>
 
     <div class="container">
     {{ page.content }}
@@ -28,14 +28,14 @@
         <ul>
         {% for post in site.posts %}
             <li>
-                <a href="{{ post.url }}">{{ post.title }}</a>
+                <a href="/{{ site.repository }}{{ post.url }}">{{ post.title }}</a>
             </li>
         {% endfor %}
         </ul>
     </div>
 
     <div class="clearfix">
-        <p><code>Copyright &copy; 2020 <a href="/?_ref=footer">Etherio</a> by <a href="https://etherio.net" target="_blank">Ethereal</a></code></p>
+        <p><code>Copyright &copy; 2020 <a href="/{{ site.repository }}?_ref=footer">Etherio</a> by <a href="https://etherio.net" target="_blank">Ethereal</a></code></p>
     </div>
 </body>
 
