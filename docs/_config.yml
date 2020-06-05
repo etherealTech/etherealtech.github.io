@@ -1,4 +1,13 @@
 name: Ethereal
+
 description: Jekyll Github Page Starter Page by Ethereal
+
 repository: docs
+
 encoding: UTF-8
+
+locale: en-US
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
