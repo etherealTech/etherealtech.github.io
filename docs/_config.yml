@@ -2,9 +2,9 @@ name: Ethereal
 
 description: Jekyll Github Page Starter Page by Ethereal
 
-baseUrl: https://blog.etherio.net
+baseurl: https://blog.etherio.net
 
-repository: 
+basepath: /
 
 encoding: UTF-8
 
