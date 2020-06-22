@@ -7,7 +7,7 @@
     <meta name="description" content="{{ site.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <title>{{ page.title }} - {{ site.name }}</title>
-    <link rel="icon" type="image/ico" href="{{ site.baseurl }}{{ site.basepath }}/favicon.ico">
+    <link rel="icon" type="image/ico" href="{{ site.baseurl }}{{ site.basepath }}favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
     <link rel="stylesheet" href="https://cdn.etherio.net/normalize/normalize.css">
     <link rel="stylesheet" href="https://cdn.etherio.net/milligram/milligram.css">
@@ -29,7 +29,7 @@
         <ul>
         {% for post in site.posts %}
             <li>
-                <a href="{{ site.baseurl }}{{ site.basepath }}{{ post.url }}">{{ post.title }}</a>
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
             </li>
         {% endfor %}
         </ul>
