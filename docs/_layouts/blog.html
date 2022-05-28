@@ -22,29 +22,27 @@
 </head>
 
 <body>
-    <nav><br ><center>
-        <a class="button button-outline" href="{{ site.url }}">{{ site.name }}</a>
-    </center><br ></nav>
-
     <div class="container">
-    {{ page.content }}
-    </div>
-
-    <hr >
-
-    <div class="container">
+        <nav>
+            <a class="button button-outline" href="{{ site.url }}">{{ site.name }}</a>
+        </nav>
+        <!-- start page content -->
+        {{ page.content }}
+        <!-- end page content -->
+        <hr />
         <h4>Blog Posts</h4>
         <ul>
+        <!-- start blog posts -->
         {% for post in site.posts %}
             <li>
                 <a href="{{ post.url }}">{{ post.title }}</a>
             </li>
         {% endfor %}
+        <!-- end blog posts -->
         </ul>
-    </div>
-
-    <div class="clearfix">
-        <p>Copyright &copy; 2020 <a href="{{ site.url }}">Etherio</a> by <a href="https://etherio.net" target="_blank">Ethereal</a></p>
+        <div class="clearfix">
+            <p>&copy; 2020 <a href="{{ site.url }}">Ethereal Tech</a>. All Right Reserved.
+        </div>
     </div>
 </body>
 
