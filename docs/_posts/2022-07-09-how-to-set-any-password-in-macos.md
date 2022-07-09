@@ -20,6 +20,12 @@ for a 4 character length password. Here’s how to retrieve the configuration, e
 
 1. `^$|.{1,}+` : Any password. (Not the best Regex, but I didn't want to mess around with it too much.)
 
+---
+
+You can also use the much more straightforward command:
+
+1. `pwpolicy -clearaccountpolicies`
+
 ## Sources
 
 - [Modify pwpolicy in Sierra](https://apple.stackexchange.com/questions/293820/modify-pwpolicy-in-sierra)
