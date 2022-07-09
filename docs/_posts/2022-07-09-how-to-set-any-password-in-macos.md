@@ -14,7 +14,7 @@ for a 4 character length password. Here’s how to retrieve the configuration, e
 2. `nano ~/Desktop/file.plist` or `vi ~/Desktop/file.plist`
 3. Change the quoted part to your Regex.<br>`policyAttributePassword matches '^$|.{4,}+'`
 4. `sudo pwpolicy setaccountpolicies ~/Desktop/file.plist`
-5. passwd
+5. `passwd`
 
 ## Presets
 
